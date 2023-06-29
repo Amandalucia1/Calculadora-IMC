@@ -1,0 +1,85 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body{
+  font-family: sans-serif;
+}
+.app{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+h1{
+  font-size: 3rem;
+}
+span{
+  margin: 12px 0;
+}
+.area-input{
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  align-items: center;
+  gap: 15px;
+}
+.area-input input{
+  width: 100%;
+  padding: 12px;
+  background-color: #121212;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.2rem;
+}
+.area-input button{
+  cursor: pointer;
+  width: 100%;
+  border-radius: 6px;
+  border: none;
+  background-color: rgba(17, 152, 255, 0.603);
+  color: #fff;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  transition: 0.3s;
+  padding: 0.8rem;
+
+}
+
+.area-input button:hover,
+.area-input button:focus{
+  background: rgb(17, 152, 255);
+  box-shadow: 0 0 0 3px #adf, 0 0 0 4px #19f;
+  outline: none;
+
+}
+
+button:active {
+  box-shadow: 0 0 0 3px #19f, 0 0 0 4px #19f;
+}
+
+
+@media(max-width:600px){
+  h1{
+    font-size: 2.2rem;
+    text-align: center;
+  }
+  .area-input input{
+    width: 95%;
+    padding: 8px;
+    font-size: 1rem;
+  }
+  .area-input button{
+    padding: 8px;
+    width: 95%;
+
+    font-size: 1rem;
+  }
+}
